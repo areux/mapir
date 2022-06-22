@@ -17,9 +17,21 @@ code {
 }
 
 .mapboxgl-control-container {
-  /* display: none !important; */
+  display: none !important;
   /* visibility: hidden !important; */
-  position: absolute !important;
+
+  /* position: absolute !important;
+  overflow: visible !important;
   width: 100vw !important;
   height: 100vh !important;
+  top: -10px;
+  z-index: 99799 !important;
+  display: flex;
+  flex-direction: column; */
 }
+
+/* .mapboxgl-ctrl-top-left {
+  width: 100px !important;
+  height: 100px !important;
+  z-index: 99999 !important;
+} */

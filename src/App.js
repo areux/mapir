@@ -44,7 +44,7 @@ function App2() {
   ])
   return (
     <>
-      <div className="absolute !h-screen !w-screen pointer-events-none" >
+      <div className="absolute !h-screen !w-screen pointer-events-none z-[90]" >
         <div className="absolute flex justify-center items-center !w-screen !h-screen pointer-events-none">
           <button className="p-4 bg-blue-500 text-white font-bold">^</button>
         </div>
@@ -79,11 +79,13 @@ function App2() {
           </div>
         </div>
       </div >
-      <Mapir
-        Map={Map}
-        center={center}
-        onDragEnd={(e) => { console.log(e) }}
-      />
+      <div className="absolute flex !w-screen !h-screen">
+        <Mapir
+          Map={Map}
+          center={center}
+          onDragEnd={(e) => { console.log(e) }}
+        />
+      </div>
     </>
   )
 }
